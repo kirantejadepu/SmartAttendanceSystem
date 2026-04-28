@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Attendance System</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container" id="loginCard">
+        <h2>Welcome Back</h2>
+        <input type="email" id="loginEmail" placeholder="Email Address">
+        <input type="password" id="loginPassword" placeholder="Password">
+        <button onclick="login()">Login</button>
+        <p>New here? <a href="#" onclick="toggleView()">Create an account</a></p>
+        <p id="loginMessage" style="color: red;"></p>
+    </div>
+
+    <div class="container" id="registerCard" style="display: none;">
+        <h2>Create Account</h2>
+        <input type="text" id="regName" placeholder="Full Name">
+        <input type="email" id="regEmail" placeholder="Email Address">
+        <input type="password" id="regPassword" placeholder="Password">
+        <select id="regRole">
+            <option value="student">I am a Student</option>
+            <option value="teacher">I am a Teacher</option>
+        </select>
+        <button onclick="register()">Register</button>
+        <p>Already have an account? <a href="#" onclick="toggleView()">Login</a></p>
+        <p id="registerMessage"></p>
+    </div>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>
